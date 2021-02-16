@@ -6,7 +6,7 @@ const config = require('./config.json');
 //=================================================================================\\
 //=================================================================================\\
 client.login(process.env.TOKEN)
-
+ 
 client.on('ready', () => {
   client.user.setActivity("YouTube!")
   console.log(`Logged in as ${client.user.tag}!`);
