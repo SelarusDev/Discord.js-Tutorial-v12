@@ -44,10 +44,8 @@ client.load = command => {
 };
 
 client.on("guildMemberAdd", member => {
-const channel = member.guild.channels.cache.get(db.get(`welcome_${member.guild.id}`))
-if(channel) {
-  channel.send(`
-Welcome to **${member.guild.name + ","}** ${member}!I hope you'll have fun.
-  `)
+const role = member.guild.roles.cache.get(db.get(`autorole_${member.guild.id}`))
+if(role) {
+member.roles.add(role)
 }
 })
