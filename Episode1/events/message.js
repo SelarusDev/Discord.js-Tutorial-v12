@@ -27,6 +27,9 @@ module.exports = message => {
     if(comnd.conf.ownerOnly === true) {
      if(message.author.id !== config.owner) return; 
     }
+    if(comnd.conf.permission) {
+     if(message.member.hasPermission(comnd.conf.permission)) return message.reply("you don't have permission to do this!"); 
+    }
     comnd.run(client, message, params, p);
   } 
 };
