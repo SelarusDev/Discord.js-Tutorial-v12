@@ -1,0 +1,27 @@
+{
+  "name": "hello-express",
+  "version": "0.0.1",
+  "description": "Selarus Development - YouTube Tutorial",
+  "author": "Musif",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "quick.db": "^7.1.2",
+    "fs": "^0.0.2"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
